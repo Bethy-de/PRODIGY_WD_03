@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-animation"></div>
+  
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <p class="subtitle">Classic game with a modern twist</p>
+
+    <div class="mode-selector">
+      <button class="mode-btn active" data-mode="pvp">2 Players</button>
+      <button class="mode-btn" data-mode="ai">vs AI</button>
+    </div>
+
+    <div class="status" id="status">Player X's Turn</div>
+
+    <div class="board" id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <div class="score-board">
+      <div class="score x">
+        <div class="score-label">Player X</div>
+        <div class="score-value" id="score-x">0</div>
+      </div>
+      <div class="score draw">
+        <div class="score-label">Draws</div>
+        <div class="score-value" id="score-draw">0</div>
+      </div>
+      <div class="score o">
+        <div class="score-label" id="label-o">Player O</div>
+        <div class="score-value" id="score-o">0</div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn btn-primary" id="new-game">New Game</button>
+      <button class="btn btn-secondary" id="reset-scores">Reset Scores</button>
+    </div>
+
+    <p class="hint">Get 3 in a row to win!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
